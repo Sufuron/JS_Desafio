@@ -10992,6 +10992,7 @@ html {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .card {
@@ -11046,9 +11047,6 @@ html {
   border: none;
   padding: 1rem 2rem;
   cursor: pointer;
-}
-.card .layer .card_main_choose p {
-  margin-right: 1rem;
 }
 .card .layer button {
   margin-top: 1rem;
