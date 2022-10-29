@@ -11001,9 +11001,17 @@ html {
   padding-top: 1rem;
 }
 .card .layer .card_main_color_change {
+  display: flex;
+  padding-left: 10rem;
+}
+.card .layer .card_main_color_change .card_main_color_change_color {
   border-radius: 100px;
-  border: 1px solid rgba(51, 102, 164, 0.466);
-  margin: 0 7rem;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
+  align-content: center;
+  border: 3px solid rgba(51, 102, 164, 0.466);
+  margin: 0 1rem;
   padding-top: 0.5rem;
 }
 .card .layer .segundoParrafo {
