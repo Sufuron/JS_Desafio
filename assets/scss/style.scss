@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico:600");
+
+$enable-shadows: true;
+
+$primary-color: tomato;
+$black-color: rgb(0, 0, 0);
+$white-color: #eee;
+$purple-color: rgb(117, 0, 146);
+$light-dark: rgb(77, 70, 70);
+$dark-green: rgb(10, 59, 25);
+$dark-red: rgb(134, 23, 47);
+$cream: rgb(247, 236, 223);
+$blue: rgb(16, 50, 78);
+$light-blue: rgba(51, 102, 164, 0.466);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+  font-family: "Pacifico", cursive;
+  background-color: $light-blue;
+}
+
+@mixin flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 95.5%;
+}
+
+.container {
+  height: 100vh;
+  color: $cream;
+  @include flexbox;
+}
+
+.card {
+  font-family: "Pacifico", cursive;
+  background-color: $blue;
+  font-weight: 400;
+  line-height: 1.75;
+  height: 65rem;
+  width: 35rem;
+  position: relative;
+  border-radius: 1rem;
+
+  & .box {
+    width: 35%;
+    height: 3rem;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  & img {
+    width: 100%;
+    position: absolute;
+    border-radius: 1rem;
+    opacity: 0.75;
+  }
+
+  & .layer {
+    text-align: center;
+    position: relative;
+    letter-spacing: 0.5rem;
+
+    & .primerParrafo {
+      font-size: 2.1rem;
+      padding: 1.8rem;
+      margin-top: 24rem;
+      font-weight: bold;
+    }
+
+    & .tercerParrafo {
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+      border-top: 1px solid rgb(66, 66, 70);
+      padding-top: 1rem;
+    }
+
+    & .segundoParrafo {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      border-top: 1px solid rgb(66, 66, 70);
+      padding-top: 1rem;
+    }
+
+    input[type="color"] {
+      width: 35%;
+      height: 3rem;
+      border-radius: 100px;
+      border: none;
+      padding: 1rem 2rem;
+      cursor: pointer;
+    }
+
+    & button {
+      margin-top: 1rem;
+      text-decoration: none;
+      font-size: 1.7rem;
+      background-color: $light-dark;
+      border-radius: 1rem;
+
+      &:hover {
+        text-decoration: none;
+        background-color: $black-color;
+        border-radius: 1rem;
+        transform: scale(1.2);
+        transition: 1.5s;
+      }
+    }
+  }
+}
