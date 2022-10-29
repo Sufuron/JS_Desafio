@@ -1,18 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico:600");
-
-$enable-shadows: true;
-
-$primary-color: tomato;
-$black-color: rgb(0, 0, 0);
-$white-color: #eee;
-$purple-color: rgb(117, 0, 146);
-$light-dark: rgb(77, 70, 70);
-$dark-green: rgb(10, 59, 25);
-$dark-red: rgb(134, 23, 47);
-$cream: rgb(247, 236, 223);
-$blue: rgb(16, 50, 78);
-$light-blue: rgba(51, 102, 164, 0.466);
-
+@import "./variables.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
@@ -85,6 +72,12 @@ html {
       margin-top: 1.5rem;
       border-top: 1px solid rgb(66, 66, 70);
       padding-top: 1rem;
+    }
+    & .card_main_color_change {
+      border-radius: 100px;
+      border: 1px solid $light-blue;
+      margin: 0 7rem;
+      padding-top: 0.5rem;
     }
 
     & .segundoParrafo {
