@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico:600");
+
 @import "./variables.scss";
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
@@ -82,7 +84,7 @@ html {
 
     & .segundoParrafo {
       font-size: 1.2rem;
-      margin-top: 2rem;
+      margin-top: 1rem;
       border-top: 1px solid rgb(66, 66, 70);
       padding-top: 1rem;
     }
